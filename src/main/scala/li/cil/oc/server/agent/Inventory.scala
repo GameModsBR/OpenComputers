@@ -12,7 +12,7 @@ import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.nbt.NBTTagList
 import net.minecraft.block.state.IBlockState
 
-class Inventory(playerEntity: EntityPlayer, val agent: internal.Agent) extends InventoryPlayer(playerEntity) {
+class Inventory(playerEntity: EntityPlayer, val agent: internal.Agent) extends InventoryPlayer(null) {
 
   def selectedItemStack = agent.mainInventory.getStackInSlot(agent.selectedSlot)
 
